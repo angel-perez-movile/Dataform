@@ -1,0 +1,3 @@
+config { type: "table" }
+
+SELECT * FROM ${ref("poc_dataform_whatsapp_consolidated1")}

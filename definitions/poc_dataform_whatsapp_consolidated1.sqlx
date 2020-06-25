@@ -1,3 +1,5 @@
+config { type: "table" }
+
 CREATE OR REPLACE TABLE
   wavy-latam.sandbox.poc_dataform_whatsapp_consolidated1 AS
 SELECT
