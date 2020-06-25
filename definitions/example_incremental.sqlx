@@ -1,0 +1,5 @@
+config { type: "incremental" }
+
+SELECT data, uuid FROM wavy-latam.sandbox.poc_dataform_whatsapp
+
+${ when(incremental(), `WHERE data > (SELECT MAX(data) FROM ${self()})`) }
