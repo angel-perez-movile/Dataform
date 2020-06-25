@@ -1,6 +1,7 @@
 {
-    "warehouse": "",
+    "warehouse": "bigquery",
     "defaultSchema": "sandbox",
     "assertionSchema": "dataform_assertions",
-    "gcloudProjectId": "wavy-latam"
+    "gcloudProjectId": "wavy-latam",
+    "defaultDatabase": "wavy-latam"
 }

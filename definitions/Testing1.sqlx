@@ -1,0 +1,3 @@
+SELECT CAST(createdAt AS DATE) createdAt, whatsapp_account_number, customerId, subAccountId, type, template_name, COUNT(1) Total, COUNT(DISTINCT msisdn) Distinct_msisdn
+FROM wavy-latam.sandbox.poc_dataform_whatsapp
+GROUP BY CAST(createdAt AS DATE), whatsapp_account_number, customerId, subAccountId, type, template_name
