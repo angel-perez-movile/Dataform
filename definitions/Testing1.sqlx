@@ -1,3 +1,20 @@
-SELECT CAST(createdAt AS DATE) createdAt, whatsapp_account_number, customerId, subAccountId, type, template_name, COUNT(1) Total, COUNT(DISTINCT msisdn) Distinct_msisdn
-FROM wavy-latam.sandbox.poc_dataform_whatsapp
-GROUP BY CAST(createdAt AS DATE), whatsapp_account_number, customerId, subAccountId, type, template_name
+CREATE OR REPLACE TABLE
+  wavy-latam.sandbox.poc_dataform_whatsapp_consolidated1 AS
+SELECT
+  CAST(createdAt AS DATE) createdAt,
+  whatsapp_account_number,
+  customerId,
+  subAccountId,
+  type,
+  template_name,
+  COUNT(1) Total,
+  COUNT(DISTINCT msisdn) Distinct_msisdn
+FROM
+  wavy-latam.sandbox.poc_dataform_whatsapp
+GROUP BY
+  CAST(createdAt AS DATE),
+  whatsapp_account_number,
+  customerId,
+  subAccountId,
+  type,
+  template_name
