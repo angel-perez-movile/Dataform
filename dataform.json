@@ -1,6 +1,6 @@
 {
     "warehouse": "",
-    "defaultSchema": "dataform",
+    "defaultSchema": "sandbox",
     "assertionSchema": "dataform_assertions",
-    "gcloudProjectId": ""
+    "gcloudProjectId": "wavy-latam"
 }
