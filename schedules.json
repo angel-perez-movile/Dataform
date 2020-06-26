@@ -1,6 +1,7 @@
 {
   "schedules": [{
     "name": "IncrementalSchedule",
+    "disabled": true,
     "options": {
       "includeDependencies": false,
       "fullRefresh": true
