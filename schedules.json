@@ -9,6 +9,19 @@
     "notification": {
       "onSuccess": false,
       "onFailure": false
+    },
+    "notifications": [{
+      "events": ["success"],
+      "channels": ["Correios"]
+    }, {
+      "events": ["failure"],
+      "channels": ["Correios"]
+    }]
+  }],
+  "notificationChannels": [{
+    "name": "Correios",
+    "email": {
+      "to": ["angel.perez@wavy.global"]
     }
   }]
 }
