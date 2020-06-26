@@ -1,1 +1,14 @@
-{}
+{
+  "schedules": [{
+    "name": "IncrementalSchedule",
+    "options": {
+      "includeDependencies": false,
+      "fullRefresh": true
+    },
+    "cron": "7 */1 * * *",
+    "notification": {
+      "onSuccess": false,
+      "onFailure": false
+    }
+  }]
+}
